@@ -7,7 +7,9 @@ public class CompositionExample {
 		System.out.println(house.getKitchen());
 		//once we set 
 		house = null;
-		//now we can not access Kitchen
+		//now we can not access Kitchen. 
+		//If try will get NullPointerException
+		System.out.println(house.getKitchen());
 	}
 }
 
