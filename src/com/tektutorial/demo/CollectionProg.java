@@ -1,8 +1,9 @@
 package com.tektutorial.demo;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.function.Predicate;
+
+import models.Employee;
 
 public class CollectionProg {
 
@@ -64,39 +65,6 @@ class DepartmenEmployeePredicate {
 	
 	public static Predicate<Employee> isEnglishDeptEmp() {
 		return emp -> emp.getDepartment().contains("English");
-	}
-}
-class Employee {
-	
-	private String name;
-	private int id;
-	private int salary;
-	private String gender;
-	private String departments;
-	
-	public String getDepartment(){
-		return departments;
-	}
-	public String getName() {
-		return name;
-	}
-	public String getGender() {
-		return gender;
-	}
-	
-	public int getId(){
-		return id;
-	}
-	
-	public int getSalary(){
-		return salary;
-	}
-	public Employee(String name, int id, int salary, String gender, String departments){
-		this.name = name;
-		this.id = id;
-		this.salary = salary;
-		this.gender = gender;
-		this.departments = departments;
 	}
 }
 
