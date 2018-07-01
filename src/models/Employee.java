@@ -1,42 +1,57 @@
 package models;
 
 public class Employee {
-	
+
 	private String name;
 	private int id;
 	private int salary;
 	private String gender;
 	private String departments;
-	
-	public String getDepartment(){
+
+	public Employee() {
+		name = "unknown";
+		salary = 1000;
+	}
+
+	public Employee(String name, Integer salary) {
+		this.name = name;
+		this.salary = salary;
+	}
+
+	public String getDepartment() {
 		return departments;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public String getGender() {
 		return gender;
 	}
-	
-	public int getId(){
+
+	public int getId() {
 		return id;
 	}
-	
-	public int getSalary(){
+
+	public int getSalary() {
 		return salary;
 	}
-	public Employee(String name, int id, int salary, String gender, String departments){
+
+	public Employee(String name, int id, int salary, String gender, String departments) {
 		this.name = name;
 		this.id = id;
 		this.salary = salary;
 		this.gender = gender;
 		this.departments = departments;
 	}
+
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", id=" + id + ", salary=" + salary + ", gender=" + gender + ", departments="
 				+ departments + "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -45,6 +60,7 @@ public class Employee {
 		result = prime * result + salary;
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
