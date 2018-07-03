@@ -2,7 +2,7 @@ package com.tektutorial.models;
 
 import java.util.Comparator;
 
-public class Employee implements Comparable<Employee>, Comparator<Employee>{
+public class Employee implements Comparable<Employee> {
 
 	private String name;
 	private int id;
@@ -88,15 +88,6 @@ public class Employee implements Comparable<Employee>, Comparator<Employee>{
 			return 1;
 		else if(this.salary < emp.salary)
 			return -1;
-		return 0;
-	}
-
-	@Override
-	public int compare(Employee emp1, Employee emp2) {
-		if(emp1.salary > emp2.salary)
-			return -1;
-		else if (emp1.salary < emp2.salary)
-			return 1;
 		return 0;
 	}
 }
