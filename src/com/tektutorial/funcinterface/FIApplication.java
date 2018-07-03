@@ -2,7 +2,7 @@ package com.tektutorial.funcinterface;
 
 import java.util.function.Function;
 
-import models.Employee;
+import com.tektutorial.models.Employee;
 
 public class FIApplication {
 

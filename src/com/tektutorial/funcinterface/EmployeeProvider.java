@@ -1,6 +1,6 @@
 package com.tektutorial.funcinterface;
 
-import models.Employee;
+import com.tektutorial.models.Employee;
 
 @FunctionalInterface
 public interface EmployeeProvider {
